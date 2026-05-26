@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animeboxd | Seu Guia de Anime</title>
+    <link rel="icon" type="image/png" href="img/abox.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>Anime<span>boxd</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="perfil.html">Meu Perfil</a></li>
+                <li><button id="btn-tema" style="background: none; border: none; cursor: pointer; font-size: 1.2rem; padding: 0.5rem;">🌓</button></li>
+                <li><a href="login.html" id="btn-login">Login / Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Descubra, avalie e organize seus animes favoritos.</h2>
+            <p>A plataforma social para os amantes de animação japonesa.</p>
+            
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Digite o nome de um anime...">
+                <button id="search-button">Buscar</button>
+            </div>
+
+            <div class="container container-filtros">
+                <div class="filtros-genero">
+                    <button class="btn-filtro active" data-id="populares"> Populares</button>
+                    <button class="btn-filtro" data-id="1"> Ação</button>
+                    <button class="btn-filtro" data-id="4"> Comédia</button>
+                    <button class="btn-filtro" data-id="22"> Romance</button>
+                    <button class="btn-filtro" data-id="8"> Drama</button>
+                    <button class="btn-filtro" data-id="10"> Fantasia</button>
+                    <button class="btn-filtro" data-id="41"> Suspense</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="animes-section">
+            <h3 id="section-title">Animes Mais Populares</h3>
+            
+            <div id="animes-grid" class="animes-grid">
+                <p class="loading">Carregando animes...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Animeboxd. Feito para o portfólio do GitHub.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

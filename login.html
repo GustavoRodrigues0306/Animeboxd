@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | Animeboxd</title>
+    <link rel="icon" type="image/png" href="img/abox.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h1><a href="index.html">Anime<span>boxd</span></a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="perfil.html">Meu Perfil</a></li>
+                <li><a href="login.html" id="btn-login" class="active">Login / Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container container-login">
+        <div class="auth-box">
+            
+            <div id="form-login-container">
+                <h2>Bem-vindo de volta!</h2>
+                <p class="auth-subtitle">Entre para organizar seus animes.</p>
+                
+                <form id="form-login">
+                    <div class="form-grupo">
+                        <label for="login-email">E-mail</label>
+                        <input type="email" id="login-email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="login-senha">Senha</label>
+                        <input type="password" id="login-senha" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn-acao btn-auth">Entrar</button>
+                </form>
+                <p class="auth-switch">Não tem uma conta? <a href="#" onclick="alternarFormularios('cadastro')">Cadastre-se</a></p>
+            </div>
+
+            <div id="form-cadastro-container" style="display: none;">
+                <h2>Criar nova conta</h2>
+                <p class="auth-subtitle">Junte-se à rede social de animes.</p>
+                
+                <form id="form-cadastro">
+                    <div class="form-grupo">
+                        <label for="cad-username">Nome de Usuário</label>
+                        <input type="text" id="cad-username" placeholder="Ex: OtakuGamer_99" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="cad-email">E-mail</label>
+                        <input type="email" id="cad-email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="cad-senha">Senha</label>
+                        <input type="password" id="cad-senha" placeholder="Mínimo 6 caracteres" minlength="6" required>
+                    </div>
+                    <button type="submit" class="btn-acao btn-auth">Criar Conta</button>
+                </form>
+                <p class="auth-switch">Já possui uma conta? <a href="#" onclick="alternarFormularios('login')">Faça Login</a></p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Animeboxd. Feito para o portfólio do GitHub.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
