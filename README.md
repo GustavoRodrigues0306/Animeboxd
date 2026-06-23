@@ -6,7 +6,7 @@ AnimeBoxd is a web application inspired by Letterboxd, designed specifically for
 
 ## Demo
 
-Live Version: (add your GitHub Pages link here)
+Live Version: https://gustavorodrigues0306.github.io/Animeboxd/
 
 ---
 
@@ -101,10 +101,8 @@ Through this project, I practiced:
 * User interface development
 * Dynamic content rendering
 
----
 
 
-```
 
 ## Future Improvements
 
